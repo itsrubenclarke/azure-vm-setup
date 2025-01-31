@@ -1,0 +1,1 @@
+# azure-and-ad-setup
