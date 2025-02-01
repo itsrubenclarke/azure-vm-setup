@@ -1,9 +1,8 @@
 <p align="center">
-<img src="https://i.imgur.com/S9uFiXj.png" alt="Microsoft Active Directory Logo"/>
+<img src="https://github.com/user-attachments/assets/f492f831-b275-4c14-a73f-68318e82c00c" alt="Microsoft Active Directory Logo"/>
 </p>
 
 <h1>Project: Deploying an Active Directory Lab in Azure</h1>
-
 
 <p> 
 This project Is the first amongst a collection focused on implementing Azure and Active Directory.
@@ -47,9 +46,42 @@ The goal here is to create a basic lab that mirrors a real working environment, 
 
 | **Operating System**        | **Role**               |
 |----------------------------|------------------------|
-| <img src="https://i.imgur.com/KcrV0u6.png" width="20"> Windows Server 2022 | Domain Controller (DC) |
-| <img src="https://i.imgur.com/KcrV0u6.png" width="20"> Windows 10 (21H2) | Client VM              |
+| <img alt= "windows logo" src="https://i.imgur.com/KcrV0u6.png" width="20"> Windows Server 2022 | Domain Controller (DC) |
+| <img alt= "Windows logo" src="https://i.imgur.com/KcrV0u6.png" width="20"> Windows 10 (21H2) | Client VM              |
 <p></p>
 
 <p>
 <h1>Setup and Configuration Guide</h1></p>
+
+
+<h3><u>Create Resource Group</u></h3>
+
+- Go to [Portal.azure.com](https://portal.azure.com)
+- Create a Resource Group
+- Name it "RG-Network-Activities" & Set the region to (Europe) UK South
+
+<img alt="resource group name" src="https://i.imgur.com/dNXnPOP.png" width="776">
+<img alt= "resource group name" src="https://i.imgur.com/Fw6lP7s.png" width="776">
+</p>
+
+<h3><img alt= "windows logo" src="https://i.imgur.com/KcrV0u6.png" width="20">  Create Windows Virtual Machine</h3>
+
+- Go to [Portal.azure.com](https://portal.azure.com)
+- Create a Virtual Machine
+- Name it "windows-vm" & Set the region to (Europe) UK South
+
+<img src="https://i.imgur.com/zr3HREy.png" width="776">
+
+
+- Select a vm size with at least 2 vcpus
+- Set a username and password
+- Be sure to memorise your credentials or store in a secure place
+
+<img src="https://i.imgur.com/iLEVzal.pngg" width="776">
+
+<h3><img alt= "linux Ubuntulogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/UbuntuCoF.svg/1024px-UbuntuCoF.svg.png" width="20">  Create Linux Virtual Machine</h3>
+
+- Go to [Portal.azure.com](https://portal.azure.com)
+- Create a Virtual Machine
+Name it "linux-vm" & Set the region to (Europe) UK South
+![Linux VM Create 001](https://github.com/user-attachments/assets/2ccd052e-fcbc-409e-abaf-af0869ee72c4)
