@@ -64,24 +64,58 @@ The goal here is to create a basic lab that mirrors a real working environment, 
 <img alt= "resource group name" src="https://i.imgur.com/Fw6lP7s.png" width="776">
 </p>
 
+![image](https://github.com/user-attachments/assets/65d6a111-3d1b-4432-971c-cf4a16c516ee)
+
+
+
+
 <h3><img alt= "windows logo" src="https://i.imgur.com/KcrV0u6.png" width="20">  Create Windows Virtual Machine</h3>
 
 - Go to [Portal.azure.com](https://portal.azure.com)
 - Create a Virtual Machine
 - Name it "windows-vm" & Set the region to (Europe) UK South
-
-<img src="https://i.imgur.com/zr3HREy.png" width="776">
-
-
 - Select a vm size with at least 2 vcpus
 - Set a username and password
 - Be sure to memorise your credentials or store in a secure place
 
-<img src="https://i.imgur.com/iLEVzal.pngg" width="776">
+![Creating Windows Virtual Machine](https://github.com/user-attachments/assets/192a051e-fc10-4648-aa3b-51ccd9c2bbb2)
+<br><br> 
+<br><br> 
+![Credentials](https://github.com/user-attachments/assets/9d35ac70-acf2-4331-9176-64c4a64ed08d)
+<br><br> 
+<br><br> 
+![Networking Step 1](https://github.com/user-attachments/assets/db017071-b60a-4d7e-af54-29de04be897e)
+
 
 <h3><img alt= "linux Ubuntulogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/UbuntuCoF.svg/1024px-UbuntuCoF.svg.png" width="20">  Create Linux Virtual Machine</h3>
 
 - Go to [Portal.azure.com](https://portal.azure.com)
 - Create a Virtual Machine
-Name it "linux-vm" & Set the region to (Europe) UK South
+- Name it "linux-vm" & Set the region to (Europe) UK South
+- Select a vm size with at least 2 vcpus
+- Set a username and password
+- Be sure to memorise your credentials or store in a secure place
+- Deploy the Linux vm to the same Virtual Network as the Windows vm
+  
 ![Linux VM Create 001](https://github.com/user-attachments/assets/2ccd052e-fcbc-409e-abaf-af0869ee72c4)
+<br><br> 
+<br><br> 
+![Linux Credentials](https://github.com/user-attachments/assets/ec0c115f-b9c9-4714-87cb-c40f3dbf7bbd)
+<br><br> 
+<br><br> 
+![Networking Step 1](https://github.com/user-attachments/assets/db017071-b60a-4d7e-af54-29de04be897e)
+
+<h3> Confirm Virtual Machines </h3>
+
+- Are deployed to the same recource group
+- Are deployed to te same Virtual network/subnet
+
+![VM Deployed](https://github.com/user-attachments/assets/766e801c-d0b0-48ff-9932-bc2bf80414b4)
+
+![image](https://github.com/user-attachments/assets/06d7191c-178b-4f1a-8378-558fe23b3524)
+
+![image](https://github.com/user-attachments/assets/f6dd9072-6c02-4178-bfc7-5c309b87852a)
+
+
+
+
