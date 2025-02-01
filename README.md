@@ -32,6 +32,14 @@ The goal here is to create a basic lab that mirrors a real working environment, 
   
   -  Perform a basic network traffic inspection between the Domain Controller and Client Virtual Machines
 </p>
+
+<h3>Environments and Technologies Used</h3>
+
+- Microsoft Azure (Virtual Machines/Compute)
+- Remote Desktop
+- Active Directory Domain Services
+- PowerShell
+
 <p>
   <h3>Operating Systems Used</h3>
   </p>
@@ -43,9 +51,5 @@ The goal here is to create a basic lab that mirrors a real working environment, 
 | <img src="https://i.imgur.com/KcrV0u6.png" width="20"> Windows 10 (21H2) | Client VM              |
 <p></p>
 
-<h2>Environments and Technologies Used</h2>
-
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Active Directory Domain Services
-- PowerShell
+<p>
+<h1>Setup and Configuration Guide</h1></p>
