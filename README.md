@@ -15,14 +15,14 @@ The goal here is to create a basic lab that mirrors a real working network envir
 
 <h2>Overview </h2>
 
-<p>In this project, I will set up and establish a connection between two virtual machines, each assigned a specific role. 
-  One virtual machine will function as the Domain Controller, while the other will be configured as the Client. This will allow me to perform a basic network traffic inspection using Wireshark.</p>
+<p>In this project, I will set up and establish a connection between two virtual machines using Windows and Linux in Microsoft Azure's Cloud environment. 
+This will allow me to perform a basic network traffic inspection using Wireshark.</p>
 
 <h2>Key Objectives</h2>
 <h3>Virtual Machine Setup</h3>
 
--  Configure and deploy the Domain Controller 
--  Configure and deploy a Client 
+-  Configure and deploy Windows VM
+-  Configure and deploy Linux VM
 
 <p>
   <h3>Remote Connectivity</h3>
@@ -33,7 +33,7 @@ The goal here is to create a basic lab that mirrors a real working network envir
 <p>
   <h3>Network Traffic Analysis</h3>
   
-  -  Perform a basic network traffic inspection between the Domain Controller and Client Virtual Machines using Wireshark
+  -  Perform a basic network traffic inspection between both Virtual Machines using Wireshark
 </p>
 
 <h3>Environments and Technologies Used</h3>
@@ -52,8 +52,8 @@ The goal here is to create a basic lab that mirrors a real working network envir
 
 | **Operating System**        | **Role**               |
 |----------------------------|------------------------|
-| <img alt= "windows logo" src="https://i.imgur.com/KcrV0u6.png" width="20"> Windows (Windows 10 Pro) | Domain Controller (DC) |
-| <img alt= "Ubuntu logo" src="https://github.com/user-attachments/assets/87cccf20-cfc6-4950-b1ec-b480d913e7eb" width="20"> Linux (ubuntu 22.04) | Client VM              |
+| <img alt= "windows logo" src="https://i.imgur.com/KcrV0u6.png" width="20"> Windows (Windows 10 Pro) | Windows VM) |
+| <img alt= "Ubuntu logo" src="https://github.com/user-attachments/assets/87cccf20-cfc6-4950-b1ec-b480d913e7eb" width="20"> Linux (ubuntu 22.04) | Linux VM              |
 <p></p>
 
 <p>
@@ -191,10 +191,21 @@ This is to ensure that we can establish the remote desktop connection and perfor
 - Re-enable the ICMP traffic for the Network Security Group your Virtual Machine is using and notice the replies begin to resume
 - Stop the ping activities using "CTRL +C"
 
+<h3>Making an SSH Connection & Observing Traffic</h3></p>
+
+- Within your Windows Virtual Machines Powershell
+- Enter the "SSH" followed by the private ip address of your Linux machine
+- You'll be prompted for your password, enter the credentials you created earlier
+- Once your connection is established you can trial running some commands like "whoami" in Powershell with the SSH filter applied in Wireshark to observe the traffic
+
+<img width="1388" alt="SSH Filter" src="https://github.com/user-attachments/assets/4ee0fdc8-930b-48d7-9ac9-adc2b807ad1a" />
+
+
+
 
 <h1>Project Summary</h1></p>
 
-In this project, a virtual network was successfully deployed in Microsoft Azure, connecting a Windows Server 2022 (Domain Controller) and a Windows 10 (Client VM). Remote Desktop Connection (RDP) was established, and Wireshark was used to capture and analyze ICMP network traffic between the machines. Additionally, firewall rules in the Network Security Group (NSG) were modified to block and re-enable ICMP traffic, demonstrating network security controls and traffic filtering in a cloud environment. 
+In this project, a virtual network was successfully deployed in Microsoft Azure, connecting a Windows (Windows 10 Pro) VM and a Linux (ubuntu 22.04 VM together using the Remote Desktop Connection (RDP). Wireshark was then used to capture, filter and analyze ICMP and SSH network traffic between the two virtual machines. Additionally, firewall rules in the Network Security Group (NSG) were modified to block and re-enable ICMP traffic, demonstrating network security controls and traffic filtering in a cloud environment. 
 
 
 
