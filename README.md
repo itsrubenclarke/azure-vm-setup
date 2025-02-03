@@ -1,18 +1,22 @@
 <p align="center">
-<img src="https://github.com/user-attachments/assets/f492f831-b275-4c14-a73f-68318e82c00c" alt="Microsoft Active Directory Logo"/>
+<img src="https://github.com/user-attachments/assets/b112fb16-135e-4b66-81dc-6276761de85a" width="500 alt="Microsoft Azure Logo"/>
 </p>
 
-<h1>Project: Deploying an Active Directory Lab in Azure</h1>
+
+
+
+<h1>Deploying A Virtual Network in Azure for Traffic Analysis</h1>
 
 <p> 
 This project Is the first amongst a collection focused on implementing Azure and Active Directory.
-The goal here is to create a basic lab that mirrors a real working environment, providing me with hands-on-learning and practical experience with Active Directory services in a Cloud-based environment.
+The goal here is to create a basic lab that mirrors a real working network environment, providing me with hands-on-learning and practical experience with Microsoft Azue, Powershell and Wireshark.
 </p>
 
 
 <h2>Overview </h2>
 
-<p>In this project, I will set up and establish a connection between two virtual machines, each assigned a specific role. One virtual machine will function as the Domain Controller, while the other will be configured as the Client. This will allow me to perform a basic network traffic inspection.</p>
+<p>In this project, I will set up and establish a connection between two virtual machines, each assigned a specific role. 
+  One virtual machine will function as the Domain Controller, while the other will be configured as the Client. This will allow me to perform a basic network traffic inspection using Wireshark.</p>
 
 <h2>Key Objectives</h2>
 <h3>Virtual Machine Setup</h3>
@@ -29,29 +33,31 @@ The goal here is to create a basic lab that mirrors a real working environment, 
 <p>
   <h3>Network Traffic Analysis</h3>
   
-  -  Perform a basic network traffic inspection between the Domain Controller and Client Virtual Machines
+  -  Perform a basic network traffic inspection between the Domain Controller and Client Virtual Machines using Wireshark
 </p>
 
 <h3>Environments and Technologies Used</h3>
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Active Directory Domain Services
-- PowerShell
+- Microsoft Azure (Virtual Machines, Networking)
+- Windows App (Remote Desktop Protocol)
+- Wireshark (Traffic Analysis)
+- PowerShell (Command-line Operations)
 
 <p>
   <h3>Operating Systems Used</h3>
   </p>
-  
+
+
+
 
 | **Operating System**        | **Role**               |
 |----------------------------|------------------------|
-| <img alt= "windows logo" src="https://i.imgur.com/KcrV0u6.png" width="20"> Windows Server 2022 | Domain Controller (DC) |
-| <img alt= "Windows logo" src="https://i.imgur.com/KcrV0u6.png" width="20"> Windows 10 (21H2) | Client VM              |
+| <img alt= "windows logo" src="https://i.imgur.com/KcrV0u6.png" width="20"> Windows (Windows 10 Pro) | Domain Controller (DC) |
+| <img alt= "Ubuntu logo" src="https://github.com/user-attachments/assets/87cccf20-cfc6-4950-b1ec-b480d913e7eb" width="20"> Linux (ubuntu 22.04) | Client VM              |
 <p></p>
 
 <p>
-<h1>Setup and Configuration Guide</h1></p>
+<h1>Setup and Configuration of Virtual Machines</h1></p>
 
 
 <h3><u>Create Resource Group</u></h3>
@@ -95,19 +101,104 @@ The goal here is to create a basic lab that mirrors a real working environment, 
 <br><br> 
 ![Networking Step 1](https://github.com/user-attachments/assets/db017071-b60a-4d7e-af54-29de04be897e)
 
-<h3> Confirm Virtual Machines </h3>
 
-- Are deployed to the same recource group
-- Contain all the appropriate assets
-- Are deployed to te same Virtual network/subnet
+<p>
+<h1>Remote Desktop Connections</h1></p>
+Confirm that the virtual machines have been deployed to the same resource group and that they are on the same Virtual network/subnet.
+This is to ensure that we can establish the remote desktop connection and perform a basic network traffic inspection.
+
 
 ![VM Deployed](https://github.com/user-attachments/assets/766e801c-d0b0-48ff-9932-bc2bf80414b4)
 <br><br> 
-![image](https://github.com/user-attachments/assets/06d7191c-178b-4f1a-8378-558fe23b3524)
-<br><br> 
-![image](https://github.com/user-attachments/assets/f6dd9072-6c02-4178-bfc7-5c309b87852a)
+<img width="586" alt="Networking" src="https://github.com/user-attachments/assets/913fdb24-bb5e-4d2f-ad4f-38c8d424502f" />
 <br><br>
 ![image](https://github.com/user-attachments/assets/1efa6437-22d0-404e-a6c0-9e2ebff7f88a)
+
+
+
+<h3><img alt= "RDP logo" src="https://github.com/user-attachments/assets/4aaa5d6e-ce8b-481f-a8da-57edc9a2917e" width="20"> Establish Remote Desktop Connection</h3>
+
+- Go to [Portal.azure.com](https://portal.azure.com)
+- Search for "Virtual Machines" in the Azure search bar
+- Select the "windows-vm" you created earlier and copy it's Public IP address
+- Launch your Remote Desktop Connection Application
+- Select "Add PC"
+- Choose "Add Credentials" from the drop down and enter the credentials you created earlier, noting to accept the security prompt and proceed.
+- You can now establish a remote connection to your virtual machine, by right-clicking the newly added device
+  
+<img width="1156" alt="Add PC" src="https://github.com/user-attachments/assets/151f6ec9-b615-4ed0-a5d1-6223206b2808" />
+
+<img width="1158" alt="Connect PC" src="https://github.com/user-attachments/assets/5774f3e0-c118-44fe-89b9-57fb4ed16075" />
+
+
+<h1>Observe ICMP Traffic Using Wireshark</h1></p>
+
+- Within your Windows virtual machine launch the Edge Browser
+- Visit https://www.wireshark.org/download.html
+- Download the Windows x64 Installer
+- Launch the Wireshark installer
+- Continue through the installation prompts
+- Ensure to select the check box for install "Npcap" to allow Wireshare to capture live network data
+- Launch the Wireshark Application once the installation is complete
+- Select the Ethernet option which has began to display network activity
+- Click the shark icon in the upper left corner of the application window to begin analysing the network traffic
+- A new window will be displayed titled "Capturing from Ethernet" as shown below
+
+<img width="1262" alt="Wireshark Launched" src="https://github.com/user-attachments/assets/2a2a75e5-0809-4342-87bb-bd40a9b23e19" />
+
+
+
+<img width="1461" alt="image" src="https://github.com/user-attachments/assets/17d5f341-a276-4d0f-bb83-dc759b0d7cd7" />
+
+<h3>Confirm Connection Between Domain Controller & Client Machines</h3></p>
+
+- Using Wireshark filter for ICMP traffic
+- Retrieve the private IP address of the Ubuntu Linux Virtual Machine (10.0.0.5)
+- Attempt to ping Linux Virtual Machine from with the Windows 10 Virtual Machine
+- Observe the ping requests and replies within Wireshark
+
+<img width="1367" alt="Ping replies" src="https://github.com/user-attachments/assets/f49a0cdd-aeb3-4d6d-8aee-ca6ce53a7df6" />
+
+
+<h3>Perpetual Pings & Network Security Groups(Firewalls)</h3>
+
+- Initial a perpetual(non-stop-ping) from your Windows Virtual Machine to your Linux Machine using the following command:
+  - "ping 10.0.0.5 -t"
+- In your Windows Virtual Machine obeserve the continuos ping requests and replies between the machines in both Powershell and Wireshark
+- Return to [Portal.azure.com](https://portal.azure.com)
+- Open the Network Security Group your Linux Virtual Machine is using and disable incoming ICMP Traffic
+
+
+![NSG Ruling](https://github.com/user-attachments/assets/030d90e2-2538-4417-9b92-a97c03d3ad38)
+
+
+
+<h3>Adding an Inbound Security Rule</h3></p>
+
+- Set the source as "any"
+- Source port ranges as "*"
+- Destination "any"
+- Service "Custom"
+- Destination port ranges "*"
+- Protocol "ICMPv4"
+- Action "Deny"
+- Priority "290" to evaluate this rule first
+
+<img width="1365" alt="Effective Firewall" src="https://github.com/user-attachments/assets/4fb5ca31-7a0b-4213-baab-385d260aec67" />
+<br><br> 
+
+- In your Windows Virtual Machine obeserve the Failing ping requests and timeout notices
+- Re-enable the ICMP traffic for the Network Security Group your Virtual Machine is using and notice the replies begin to resume
+- Stop the ping activities using "CTRL +C"
+
+
+<h1>Project Summary</h1></p>
+
+In this project, a virtual network was successfully deployed in Microsoft Azure, connecting a Windows Server 2022 (Domain Controller) and a Windows 10 (Client VM). Remote Desktop Connection (RDP) was established, and Wireshark was used to capture and analyze ICMP network traffic between the machines. Additionally, firewall rules in the Network Security Group (NSG) were modified to block and re-enable ICMP traffic, demonstrating network security controls and traffic filtering in a cloud environment. 
+
+
+
+
 
 
 
