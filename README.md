@@ -52,7 +52,7 @@ This will allow me to perform a basic network traffic inspection using Wireshark
 
 | **Operating System**        | **Role**               |
 |----------------------------|------------------------|
-| <img alt= "windows logo" src="https://i.imgur.com/KcrV0u6.png" width="20"> Windows (Windows 10 Pro) | Windows VM) |
+| <img alt= "windows logo" src="https://i.imgur.com/KcrV0u6.png" width="20"> Windows (Windows 10 Pro) | Windows VM |
 | <img alt= "Ubuntu logo" src="https://github.com/user-attachments/assets/87cccf20-cfc6-4950-b1ec-b480d913e7eb" width="20"> Linux (ubuntu 22.04) | Linux VM              |
 <p></p>
 
