@@ -1,15 +1,13 @@
 <p align="center">
-<img src="https://github.com/user-attachments/assets/b112fb16-135e-4b66-81dc-6276761de85a" width="500 alt="Microsoft Azure Logo"/>
+<img src="https://github.com/user-attachments/assets/0fa341e4-f07c-4b26-a55e-c6b8a91c582c" width="500 alt="Microsoft Azure Logo"/>
 </p>
 
 
-
-
-<h1>Deploying A Virtual Network in Azure for Traffic Analysis</h1>
+<h1>Azure: Network Traffic Analysis With Wireshark</h1>
 
 <p> 
-This project Is the first amongst a collection focused on implementing Azure and Active Directory.
-The goal here is to create a basic lab that mirrors a real working network environment, providing me with hands-on-learning and practical experience with Microsoft Azue, Powershell and Wireshark.
+This project is the second amongst a collection focused on implementing Azure and Active Directory.
+The goal here is to create a basic lab that mirrors a real working network environment, providing me with hands-on-learning and practical experience with Microsoft Azure, PowerShell and Wireshark.
 </p>
 
 
