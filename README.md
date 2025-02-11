@@ -5,7 +5,7 @@
 
 
 
-<h1>Azure: Creating a Virtual Machine</h1>
+<h1>Azure: Creating Virtual Machines</h1>
 
 
 <p>
