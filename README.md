@@ -9,11 +9,11 @@
 
 
 <p>
-
-This project is the first amongst a collection focused on implementing Azure and Active Directory.
+This project is the first amongst a collection focused on implementing a Virtual Network in Azure.
 Microsoft Azure is a cloud platform that will let you rent space in order to store or process your own data.  
 In this project, I will set up and establish a connection between two virtual machines using Windows and Linux in Microsoft Azure's Cloud environment. 
-This setup is going to enable me to perform a basic network traffic inspection using Wireshark in the next part of the collection.</p>
+This setup is going to enable me to perform a basic network traffic inspection using Wireshark in the next part of the collection.
+</p>
 
 <h2>Key Objectives</h2>
 <h3>Virtual Machine Setup</h3>
