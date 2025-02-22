@@ -10,9 +10,9 @@
 
 <p>
 This project is the first amongst a collection focused on implementing a Virtual Network in Azure.
-Microsoft Azure is a cloud platform that will let you rent space in order to store or process your own data.  
-In this project, I will set up and establish a connection between two virtual machines using Windows and Linux in Microsoft Azure's Cloud environment. 
-This setup is going to enable me to perform a basic network traffic inspection using Wireshark in the next part of the collection.
+Microsoft Azure is a cloud platform that will let you rent space to store or process your data.  
+In this project, I will establish a connection between two virtual machines using Windows and Linux in Microsoft Azure's Cloud environment. 
+This setup will enable me to perform a basic network traffic inspection using Wireshark in the next part of the collection.
 </p>
 
 <h2>Key Objectives</h2>
@@ -54,7 +54,7 @@ This setup is going to enable me to perform a basic network traffic inspection u
 
 - Go to [Portal.azure.com](https://portal.azure.com)
 - Create a Resource Group
-- Name it `RG-Network-Activities` & Set the region to (Europe) UK South
+- Name it `"RG-Network-Activities"` & Set the region to (Europe) UK South
 
 <img alt="resource group name" src="https://i.imgur.com/dNXnPOP.png" width="776">
 <img alt= "resource group name" src="https://i.imgur.com/Fw6lP7s.png" width="776">
