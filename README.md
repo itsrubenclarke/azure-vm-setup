@@ -83,7 +83,7 @@ This setup will enable me to perform a basic network traffic inspection using Wi
 - Name it "linux-vm" & Set the region to (Europe) UK South
 - Select a vm size with at least 2 vcpus
 - Set a username and password
-- Be sure to memorise your credentials or store in a secure place
+- Be sure to memorise your credentials or store them in a secure place
 - Deploy the Linux vm to the same Virtual Network as the Windows vm
   
 ![Linux VM Create 001](https://github.com/user-attachments/assets/2ccd052e-fcbc-409e-abaf-af0869ee72c4)
@@ -97,8 +97,8 @@ This setup will enable me to perform a basic network traffic inspection using Wi
 <h1>Remote Desktop Connections</h1></p>
 
 <h3><u>Step 4: Confirm Virtual Network/Subnet Configuration</u></h3>
-Confirm that the virtual machines have been deployed to the same resource group and that they are on the same Virtual network/subnet.
-This is to ensure that we can establish the remote desktop connection and perform a basic network traffic inspection in the next part.
+Confirm that the virtual machines have been deployed to the same resource group and are on the same Virtual network/subnet.
+This ensures that we can establish the remote desktop connection and perform a basic network traffic inspection in the next part.
 
 
 ![VM Deployed](https://github.com/user-attachments/assets/766e801c-d0b0-48ff-9932-bc2bf80414b4)
@@ -113,13 +113,13 @@ This is to ensure that we can establish the remote desktop connection and perfor
 
 - Go to [Portal.azure.com](https://portal.azure.com)
 - Search for "Virtual Machines" in the Azure search bar
-- Select the "windows-vm" you created earlier and copy it's Public IP address
+- Select the "windows-vm" you created earlier and copy its Public IP address
 
 - Launch your Remote Desktop Connection Application
     - Mac Users download <a href="https://apps.apple.com/us/app/windows-app/id1295203466?mt=12" target="_blank" rel="noopener noreferrer">Windows App</a> Formerly known as "Microsoft Remote Desktop"
     - Windows Users open and use Remote Desktop
 - Select "Add PC"
-- Choose "Add Credentials" from the drop down and enter the credentials you created earlier, noting to accept the security prompt and proceed.
+- Choose "Add Credentials" from the drop-down and enter the credentials you created earlier, noting to accept the security prompt and proceed.
 - You can now establish a remote connection to your virtual machine, by right-clicking the newly added device
   
 <img width="1156" alt="Add PC" src="https://github.com/user-attachments/assets/151f6ec9-b615-4ed0-a5d1-6223206b2808" />
@@ -133,7 +133,7 @@ This is to ensure that we can establish the remote desktop connection and perfor
 
 🎉Congratulations! You have created your first virtual machine within Azure!🎉
 
-In this project, a virtual network was successfully deployed in Microsoft Azure, connecting a Windows (Windows 10 Pro) Virtual Machine and a Linux (ubuntu 22.04) Virtual Machine together using the Remote Desktop Connection (RDP). 
+In this project, a virtual network was successfully deployed in Microsoft Azure, connecting a Windows (Windows 10 Pro) Virtual Machine and a Linux (ubuntu 22.04) Virtual Machine using the Remote Desktop Connection (RDP). 
 
 
 
