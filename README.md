@@ -65,9 +65,9 @@ This setup will enable me to perform a basic network traffic inspection using Wi
 - Go to [Portal.azure.com](https://portal.azure.com)
 - Create a Virtual Machine
 - Name it "windows-vm" & Set the region to (Europe) UK South
-- Select a vm size with at least 2 vcpus
+- Select a vm size with at least 2 VCPUs
 - Set a username and password
-- Be sure to memorise your credentials or store in a secure place
+- Be sure to memorise your credentials or store them in a secure place
 
 ![Creating Windows Virtual Machine](https://github.com/user-attachments/assets/192a051e-fc10-4648-aa3b-51ccd9c2bbb2)
 <br><br> 
