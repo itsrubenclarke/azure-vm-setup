@@ -54,7 +54,7 @@ This setup will enable me to perform a basic network traffic inspection using Wi
 
 - Go to [Portal.azure.com](https://portal.azure.com)
 - Create a Resource Group
-- Name it `"RG-Network-Activities"` & Set the region to (Europe) UK South
+- Name it '"RG-Network-Activities"' & Set the region to (Europe) UK South
 
 <img alt="resource group name" src="https://i.imgur.com/dNXnPOP.png" width="776">
 <img alt= "resource group name" src="https://i.imgur.com/Fw6lP7s.png" width="776">
@@ -65,7 +65,7 @@ This setup will enable me to perform a basic network traffic inspection using Wi
 - Go to [Portal.azure.com](https://portal.azure.com)
 - Create a Virtual Machine
 - Name it '"windows-vm"' & Set the region to (Europe) UK South
-- Select a vm size with at least 2 VCPUs
+- Select a VM size with at least 2 VCPUs
 - Set a username and password
 - Be sure to memorise your credentials or store them in a secure place
 
