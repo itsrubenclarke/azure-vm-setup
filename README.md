@@ -81,7 +81,7 @@ This setup will enable me to perform a basic network traffic inspection using Wi
 - Go to [Portal.azure.com](https://portal.azure.com)
 - Create a Virtual Machine
 - Name it "linux-vm" & Set the region to (Europe) UK South
-- Select a vm size with at least 2 VCPUs
+- Select a VM size with at least 2 VCPUs
 - Set a username and password
 - Be sure to memorise your credentials or store them in a secure place
 - Deploy the Linux vm to the same Virtual Network as the Windows vm
