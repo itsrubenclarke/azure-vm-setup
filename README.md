@@ -84,7 +84,7 @@ This setup will enable me to perform a basic network traffic inspection using Wi
 - Select a VM size with at least 2 VCPUs
 - Set a username and password
 - Be sure to memorise your credentials or store them in a secure place
-- Deploy the Linux vm to the same Virtual Network as the Windows vm
+- Deploy the Linux VM to the same Virtual Network as the Windows vm
   
 ![Linux VM Create 001](https://github.com/user-attachments/assets/2ccd052e-fcbc-409e-abaf-af0869ee72c4)
 <br><br> 
