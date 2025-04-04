@@ -120,7 +120,7 @@ This ensures that we can establish the remote desktop connection and perform a b
     - Windows Users open and use Remote Desktop
 - Select "Add PC"
 - Choose "Add Credentials" from the drop-down and enter the credentials you created earlier, noting to accept the security prompt and proceed.
-- You can now establish a remote connection to your virtual machine, by right-clicking the newly added device
+- You can now establish a remote connection to your virtual machine by right-clicking the newly added device
   
 <img width="1156" alt="Add PC" src="https://github.com/user-attachments/assets/151f6ec9-b615-4ed0-a5d1-6223206b2808" />
 
