@@ -9,7 +9,7 @@
 
 
 <p>
-This project is the first in a collection focused on implementing a Virtual Network in Azure.
+This project is the first in a collection focused on implementing a Virtual Network in Microsoft Azure.
 Microsoft Azure is a cloud platform that lets you rent space to store or process your data.  
 In this project, I will establish a connection between two virtual machines using Windows and Linux in Microsoft Azure's Cloud environment. 
 This setup will enable me to perform a basic network traffic inspection using Wireshark in the next part of the collection.
